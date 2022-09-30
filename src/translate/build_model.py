@@ -331,12 +331,12 @@ def compute_model(prog):
     return queue.queue
 
 if __name__ == "__main__":
-    import pddl_parser
+    import pddl_parser_interal
     import normalize
     import pddl_to_prolog
 
     print("Parsing...")
-    task = pddl_parser.open()
+    task = pddl_parser_interal.open()
     print("Normalizing...")
     normalize.normalize(task)
     print("Writing rules...")

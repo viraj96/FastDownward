@@ -391,7 +391,7 @@ def condition_to_rule_body(parameters, condition):
     return result
 
 if __name__ == "__main__":
-    import pddl_parser
-    task = pddl_parser.open()
+    import pddl_parser_interal
+    task = pddl_parser_interal.open()
     normalize(task)
     task.dump()

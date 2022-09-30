@@ -194,8 +194,8 @@ def translate(task):
 
 
 if __name__ == "__main__":
-    import pddl_parser
-    task = pddl_parser.open()
+    import pddl_parser_interal
+    task = pddl_parser_interal.open()
     normalize.normalize(task)
     prog = translate(task)
     prog.dump()
